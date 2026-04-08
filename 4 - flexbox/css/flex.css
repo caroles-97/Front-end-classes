@@ -27,5 +27,10 @@
     justify-content: space-between;
 }
 #modelo-5 {
-    flex-direction: column;
+    align-items: center;
 }
+
+/* JUSTIFY-CONTENT
+space-between: espaça todos os itens, equilibra sozinho 
+space-around: ESPAÇAMENTO CENTRAL maior que das extremidades
+space-evenly: espaçamento igual entre item e margens */
