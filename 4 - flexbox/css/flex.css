@@ -1,0 +1,31 @@
+/* container é elemento-pai e ele tem os filhos (box) */
+
+.container {
+    display:flex;
+}
+/* flex-direction: informa a direção dos elementos.
+    column: Útil para mudar do desktop p mobile. 
+    row - fila
+    
+    flex-wrap: wrap    nowrap*/
+
+#modelo-1 {
+    flex-direction: column;
+    justify-content: flex-start;
+}
+#modelo-2 {
+    flex-direction: row;
+    flew-wrap: wrap;
+    justify-content: flex-end;
+}
+#modelo-3 {
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+#modelo-4 {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+#modelo-5 {
+    flex-direction: column;
+}
