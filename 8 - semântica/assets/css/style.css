@@ -29,7 +29,7 @@ nav ul {
             display: inline-block;
             transition: all .5s ease;
         
-            &:hover {
+            &:hover { 
                 color: var(--primary);
             }
         }
@@ -37,7 +37,9 @@ nav ul {
 }
 
 #banner {
-    
+    background-image: url(../images/Mount\ Fuji.jpg);
+    height: 100vh;
+    background-size: cover;
     
     flex-direction: column;
     justify-content: center;
