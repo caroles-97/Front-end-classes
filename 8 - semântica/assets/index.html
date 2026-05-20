@@ -5,12 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Reset css vem sempre PRIMEIRO -->
-    <link rel="stylesheet" href=".css/reset.css">
-    
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+
+    <!-- Ordem certa: 1º RESET CSS, 2º Variavél etc -->
+    <link rel="stylesheet" href="./css/components.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Semântica e Componentização</title>
 </head>
 <body>
     
+    <header>
+        <nav> <!-- Estrutura de navação <nav> -->
+            <ul class="flex">
+                <!-- Estrutura de lista -->
+                <li><a href= "#banner" class="menu-item"> Início</a></li>
+                <li><a href= "#food" class="menu-item"> Gastronomia </a></li>
+                <li><a href= "#itinerary" class="menu-item"> Roteiro </a></li>
+            </ul>
+
+        </nav> <!-- Estrutura de navação <nav> -->
+    </header>
+
+    <main>
+        <section id="banner" class="flex">
+            <h1 class="title"> Descubra a alma do Japão</h1>
+            <p class="text"> Uma jornada pelas tradições e paisagens.</p>
+
+                    <!-- div.flex>a*2 -->
+            <div class="flex">
+                <a href="food" class="btn btn-primary"> Iniciar jornada</a>
+                <a href="#itinerary" class="btn"> Ver roteiros</a>
+            </div>
+
+
+
+
+        </section>
+    </main>
+
 </body>
 </html>

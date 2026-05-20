@@ -4,22 +4,34 @@ html {
 
 header {
     /**/
+    background-color: var(--dark);
+    position: fixed; /* DEIXAR MENU FIXO */
+    top: 0; 
+    width: 100vw;  /*vw - vai pegar a largura do dispositivo do usuário .  vh - altura*/ 
+    z-index: 10; /*define a camada. Esse nº é elevado, ou seja, nada vai passar na frente dele*/ 
+    box-shadow: 0 5px 7px rgba(0, 0, 0, 0.4);
+
+
 }
 
 nav ul {
     justify-content: center;
 
-    li a {
-        color: var(--light);
-        font-family: var(--text);
-        font-size: var(--text-size);
-        text-decoration: none;
-        padding: 20px 15px;
-        display: inline-block;
-        transition: all .5s ease;
+    li {
+        list-style: none;
     
-        &:hover {
-            color: var(--primary);
+        a {
+            color: var(--light);
+            font-family: var(--text);
+            font-size: var(--text-size);
+            text-decoration: none;
+            padding: 20px 15px;
+            display: inline-block;
+            transition: all .5s ease;
+        
+            &:hover {
+                color: var(--primary);
+            }
         }
     }
 }

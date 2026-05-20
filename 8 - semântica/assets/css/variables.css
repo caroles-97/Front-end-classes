@@ -3,8 +3,7 @@
 
 /* Aqui vamos definir as variáveis do projeto */
 
-/* Raiz do projeto */
-:root {
+:root { /* Raiz do projeto */
 
     /* Variável de Cor */
     --primary: #BC002D;
@@ -12,25 +11,16 @@
     --tertiary: #4A4A4A;
     --light: #F9F9F9;
     --dark: #1E1E1E;
-
     /* Qualquer valor que precisa repetir muitas vezes, podemos criar como uma variável */
 
 
     /* Variável de Fonte - Títulos */
+
+    /* BOAS PRÁTICAS: Caso não carregar a fonte Noto Serif para o usuário, tem a opção de uma 2ª fonte. Caso mesmo assim não carregar, temos uma 3ª fonte (como reserva) */
     --title: 'Noto Serif', Trebuchet MS, sans-serif;
     --title-size: 46px; 
 
     /* Variável de Fonte - Textos */
     --text: 'Monstserrat', Roboto, Calibri;
     --text-size: 18px; 
-}
-
-.title {
-    color: var(--primary);
-    font-family: var (--title);
-    font-size: var (--title-size);
-    font-weight: 400;
-    line-height: 1.2;
-    letter-spacing: -0.5px;
-
 }
